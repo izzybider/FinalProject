@@ -1,51 +1,64 @@
 import processing.core.PApplet;
 
-public class ScrambleGame extends PApplet {
-    private final String[] WORD_BANK = {"fungus", "meow", "juice", "rock", "scrumptious"};
+public class Main extends PApplet {
+    private final String[] SOLUTIONS = {"rock", "meow", "juice"}; //put jumbled words in bank, solutions = and jum
+    private final String[] jumbled = {"kroc", "wmoe", "iceuj"};
+
+    private String guess;
+
+    private int index;
 
     public static void main(String[] args) {
-        PApplet.main("ScrambleGame");
+        PApplet.main("Main");
     }
 
-    public ScrambleGame() {
+    public Main() {
     }
 
     public void settings() {
         size(400, 400);
     }
 
+    public void setup() {
+        guess = "";
+        index = (int) random(SOLUTIONS.length);
+        //generate random index
+    }
+
     public void draw() {
-        startGame();
+        fill(0);
+        textSize(48);
+        text(jumbled[index], width/2, height/2);
+        text(guess, width/2, height/2 + 50);
         noLoop(); //draw is called just once
     }
 
     public void mouseClicked() {
-        redraw();
-    }
-
-    public String selectWord() {
-        return WORD_BANK; // how do i have the program select a random word from the bank?
-    }
-
-    public String Guess() { //have the ueser guess the original word
-        System.out.println("Type in what you think the word is unscrammbled.");
-        //other stuff??
-    }
-    private void startGame() {
-        int NumberOfGuesses = 0;
-        String ogWord = selectWord(); //??
-        System.out.println("The shuffled word is: "); //how do i make it choose a random word from the word bank?
-        Guess++; //idk how to put this, but i want the program to have the user guess?
-        if (ogWord.equals(Guess)) {
+        if(guess.equals(SOLUTIONS [index])) {
             System.out.println("Nice job you unscrammbled the word");
         } else {
             System.out.println("You are wrong.");
-            //need to make it stop letting the user guess after 3 guesses
         }
+        redraw();
+        //if using a check box or try again box
     }
-    public String ShuffledWord() {
-        String ShuffleWords = ogWord; //og word before ze shuffling
-        //stuff idk
-        return ShuffledWord;
+
+    public void keyPressed() {
+        guess = guess + key;
+        //concatenate key, glue each key onto end of the string
+        //as soon as string is as long as length, it enters
+        //visualize indicator of where the characeters you're pressing go
     }
 }
+
+    //public String ShuffledWord() {
+        //tring ShuffleWords = ogWord; //og word before ze shuffling
+        //stuff idk
+        //return ShuffledWord;
+        //could come back and add this
+    //}
+//}
+
+
+//to do: check me box, feedback on guess (good guess or bad guess try again), offer to try again if wrong, play again if possible but do at least one wrong
+//don't use system.out.println
