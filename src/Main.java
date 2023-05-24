@@ -38,10 +38,10 @@ public class Main extends PApplet {
         fill(255);
         text("try", width/2, height*3/4+30);
         if(won) {
-            text("Great you did something", width / 2, 40);
+            text("Great you got it. Play again", width / 2, 40);
         }
         if(lost) {
-            text("You are wrong.", width / 2, 40);
+            text("You are wrong. Try again", width / 2, 40);
         }
         noLoop(); //draw is called just once
     }
@@ -51,13 +51,14 @@ public class Main extends PApplet {
             System.out.println("hi");
             if (guess.equals(SOLUTIONS[index])) {
                 won = true;
-                System.out.println("Nice job you unscrammbled the word");
-                //choose a new word, call setup
+                System.out.println("Great you got it. Play again");
+                text(jumbled[index], width/2, height/2); //choose a new word
+                setup(); //call setup
             } else {
                 lost = true;
-                System.out.println("You are wrong.");
-                //make submit button become try again here
-                //clear guess by making guess an empty string
+                System.out.println("You are wrong. Try again");
+                //make try button become try again here --> i just added try again to the text...?
+                guess = ""; //clear guess by making guess an empty string
             }
             redraw();
         }

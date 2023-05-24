@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b988f00-5cba-45ba-97a8-87fc8db0140c" name="Changes" comment="meeting with you!">
+    <list default="true" id="1b988f00-5cba-45ba-97a8-87fc8db0140c" name="Changes" comment="added text, changed colors, added a try box to click">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -72,13 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684797093767</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added text, changed colors, added a try box to click">
+      <created>1684891204965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684891204965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="trying to initialize a string array? a little lost though" />
     <MESSAGE value="trying to initialize a string array and getting the general structure set up? a little lost though" />
     <MESSAGE value="meeting with you!" />
-    <option name="LAST_COMMIT_MESSAGE" value="meeting with you!" />
+    <MESSAGE value="added text, changed colors, added a try box to click" />
+    <option name="LAST_COMMIT_MESSAGE" value="added text, changed colors, added a try box to click" />
   </component>
 </project>
