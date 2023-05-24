@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b988f00-5cba-45ba-97a8-87fc8db0140c" name="Changes" comment="trying to initialize a string array and getting the general structure set up? a little lost though">
+    <list default="true" id="1b988f00-5cba-45ba-97a8-87fc8db0140c" name="Changes" comment="meeting with you!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -65,23 +65,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684534586615</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="meeting with you!">
+      <created>1684797093767</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684797093767</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="trying to initialize a string array? a little lost though" />
     <MESSAGE value="trying to initialize a string array and getting the general structure set up? a little lost though" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to initialize a string array and getting the general structure set up? a little lost though" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="meeting with you!" />
+    <option name="LAST_COMMIT_MESSAGE" value="meeting with you!" />
   </component>
 </project>
